@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA">
+
+    <TextView
+        android:background="@drawable/textview_line"
+        android:id="@+id/favorites_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="즐겨찾기"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/favorites_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/favorites_main"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout0"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedrectangle_ligtblue">
+
+                <TextView
+                    android:id="@+id/top_title0"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:text="즐겨찾기 추가된 강좌가 없습니다."
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout1"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title1"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title1"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn1"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn1"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout2"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title2"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title2"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn2"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn2"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/Fa_Re_Layout3"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title3"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title3"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn3"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn3"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout4"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title4"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title4"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn4"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn4"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout5"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title5"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title5"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn5"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn5"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout6"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title6"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title6"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn6"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn6"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout7"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title7"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title7"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn7"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn7"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout8"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title8"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title8"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn8"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn8"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout9"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title9"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title9"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn9"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn9"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fa_Re_Layout10"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedrectangle_ligtblue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/top_title10"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:onClick="favorites_text_click"
+                    android:text=""
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_title10"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/Fdelete_btn10"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gmts_blue"
+                        android:onClick="favorites_delete"
+                        android:text="삭제" />
+
+                    <CheckBox
+                        android:id="@+id/fav10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="115dp"
+                        android:onClick="favoriteCalCheck"
+                        android:text="달력추가"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/AlarmCheck_btn10"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundedrectangle_gray"
+                        android:onClick="Alarm"
+                        android:text="알림설정"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

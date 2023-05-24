@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/meun_home"
+        android:title="홈"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item
+        android:id="@+id/meun_favorites"
+        android:title="즐겨찾기"
+        android:icon="@drawable/ic_baseline_grade_24"
+        />
+    <item
+        android:id="@+id/meun_calender"
+        android:title="캘린더"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        />
+    <item
+        android:id="@+id/meun_setting"
+        android:title="설정"
+        android:icon="@drawable/ic_baseline_settings_24"
+        />
+
+</menu>

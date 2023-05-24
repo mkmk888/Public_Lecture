@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.public_lecture_mainscreen">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appimg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appimg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Public_lecture_mainscreen"
+        android:usesCleartextTraffic="true">
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6744681173127503~9598537314"/>
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="jimpw82c02" />
+
+        <!-- 팝업 Activity -->
+        <activity android:name=".PopupSearchActivity" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".LoadingActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".Loading"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".PopupInformationActivity"/>
+        <activity android:name=".AlarmActivity"/>
+
+    </application>
+
+</manifest>

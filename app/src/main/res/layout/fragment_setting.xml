@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/textview_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:background="@drawable/textview_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="도움말"
+        android:onClick="helpweb"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:background="@drawable/textview_line"
+        android:id="@+id/setting_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="강좌 최신화"
+        android:onClick="Update_DB"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:background="@drawable/textview_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="버전                                        1.0"/>
+
+
+</LinearLayout>
